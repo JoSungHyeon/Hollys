@@ -1,0 +1,100 @@
+[
+	{
+	  "name_KR": "레드 시나몬 뱅쇼",
+	  "name_EN": "Red Cinnamon Vin Chaud",
+	  "text": "수정과에 은은한 와인향을 담은 무알콜 레드 뱅쇼",
+	  "info": {
+		"title": "제품영양정보 ((1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "240kcal",
+		"sugar": "51g (51%)",
+		"protein": "1g (2%)",
+		"saturated": "0g (0%)",
+		"sodium": "53mg (3%)",
+		"caffeine": "0mg"
+	  }
+	},
+	{
+	  "name_KR": "우리 고구마 밀크폼라떼",
+	  "name_EN": "Sweet Potato Milk Foam Latte",
+	  "text": "부드러운 밀크폼이 가득해 더욱 고소하고 달달한 국내산 100% 고구마라떼",
+	  "info": {
+		"title": "제품영양정보 ((1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "382kcal",
+		"sugar": "35g (35%)",
+		"protein": "9g (16%)",
+		"saturated": "9.6g (64%)",
+		"sodium": "171mg (9%)",
+		"caffeine": "0mg"
+	  }
+	},
+	{
+	  "name_KR": "레몬 생강차",
+	  "name_EN": "Lemon Ginger Tea",
+	  "text": "알싸한 생강에 향긋한 레몬이 더해져 따뜻하고 개운하게 즐길 수 있는 전통차",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
+		"calorie": "208kcal",
+		"sugar": "39g (39%)",
+		"protein": "0g (0%)",
+		"saturated": "0.3g (2%)",
+		"sodium": "57mg (3%)",
+		"caffeine": "0mg"
+	  }
+	},
+	{
+	  "name_KR": "대추 생강차",
+	  "name_EN": "Jujube Ginger Tea",
+	  "text": "대추 과육과 생강이 진하게 어우러져 달콤하고 부드럽게 마실 수 있는 전통차",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
+		"calorie": "229kcal",
+		"sugar": "45g (45%)",
+		"protein": "0g (1%)",
+		"saturated": "0g (0%)",
+		"sodium": "25g (1%)",
+		"caffeine": "0mg"
+	  }
+	},
+	{
+	  "name_KR": "제주 레몬 애플티",
+	  "name_EN": "Jeju Lemon Apple Tea",
+	  "text": "상큼한 제주 레몬과 달달한 사과다이스가 어우러진 과일차",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "227kcal",
+		"sugar": "54g (54%)",
+		"protein": "0g (1%)",
+		"saturated": "0g (0%)",
+		"sodium": "140mg (7%)",
+		"caffeine": "-"
+	  }
+	},
+	{
+	  "name_KR": "로얄 밀크 버블티",
+	  "name_EN": "Royal Milk Bubble Tea",
+	  "text": "향긋한 홍차의 풍미와 부드러운 우유가 쫀득한 타피오카펄과 만나 고소하게 즐기는 버블티",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "352kcal",
+		"sugar": "30g (30%)",
+		"protein": "6g (12%)",
+		"saturated": "4.2g (28%)",
+		"sodium": "109mg (5%)",
+		"caffeine": "-"
+	  }
+	},
+	{
+	  "name_KR": "로얄 밀크티 라떼",
+	  "name_EN": "Royal Milk Tea Latte",
+	  "text": "스리랑카산 딤블라홍차 추출분말로 만들어 향긋한 풍미가 특징인 로얄 밀크티 라떼",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량/ Regular 기준)",
+		"calorie": "287kcal",
+		"sugar": "29g (29%)",
+		"protein": "9g (16%)",
+		"saturated": "6.3g (42%)",
+		"sodium": "140mg (7%)",
+		"caffeine": "51mg"
+	  }
+	}
+]

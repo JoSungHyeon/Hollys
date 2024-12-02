@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<title>Hollys Coffee</title>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./js/index.js"></script>
+</head>
+<!-- #BA000C -->
+<body>
+	<header><!-- header.ejs -->
+		<div class="header_inner">
+			<div class="logo"><!-- logo.ejs -->
+				<h1>
+					<a href="./index.html"><img src="./img/logo.gif" alt="logo"></a>
+				</h1>
+			</div>
+			<div class="nav"><!-- nav.ejs -->
+				<ul>
+					<li><a href="./login.html">멤버십 로그인</a></li>
+					<li><a href="./join.html">멤버십 가입</a></li>
+				</ul>
+			</div>
+			<!-- login_info.js -->
+		</div>
+	</header>
+	<main><!-- slider.ejs -->
+		<div class="swiper mainSwiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				<a href="">
+					<img src="./img/banner1.jpg" alt="banner1">
+				</a>
+			  </div>
+			  <div class="swiper-slide">
+				<a href="">
+					<img src="./img/banner2.jpg" alt="banner2">
+				</a>
+			  </div>
+			  <div class="swiper-slide">
+				<a href="">
+					<img src="./img/banner3.jpg" alt="banner3">
+				</a>
+			  </div>
+			</div>
+			<div class="swiper-pagination"></div>
+		  </div>
+	</main>
+	<section><!-- order.ejs -->
+		<div class="section_inner">
+			<!-- login.ejs -->
+			<div class="order_wrap">
+				<a href="./menu.html" class="order">주문하기</a>
+				<a href="./login.html" class="login">로그인</a>
+			</div>
+			<!-- login_info.js -->
+			<!-- notice.ejs -->
+			<div class="note_wrap">
+				<p>문의사항</p>
+				<ul>
+					<li>
+						<a href="">리스트 제목</a>
+						<span>2024-11-21</span>
+					</li>
+					<li>
+						<a href="">리스트 제목</a>
+						<span>2024-11-21</span>
+					</li>
+					<li>
+						<a href="">리스트 제목</a>
+						<span>2024-11-21</span>
+					</li>
+					<li>
+						<a href="">리스트 제목</a>
+						<span>2024-11-21</span>
+					</li>
+				</ul>
+			</div>
+			<!-- 상세 리스트.ejs -->
+		</div>
+	</section>
+
+	<div class="live_wrap">
+		<div class="live_img"><img src="./img/live.gif" alt="liveLogo"></div>
+		<ul class="sns_wrap">
+			<li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+			<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+		</ul>
+	</div>
+
+	<footer><!-- footer.ejs -->
+		<div class="footer_inner">
+			<p>본 페이지는 개인 포트폴리오용 페이지이므로 상업적 용도가 없습니다.</p>
+		</div>
+	</footer>
+</body>
+</html>

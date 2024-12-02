@@ -1,0 +1,100 @@
+[
+	{
+	  "name_KR": "헤이즐넛 초코칩 할리치노",
+	  "name_EN": "Hazelnut Chocochip Hollyccino",
+	  "text": "다크 초콜릿과 헤이즐넛이 어우러져 달달함 가득한 초콜릿 할리치노",
+	  "info": {
+		"title": "제품영양정보 ((1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "452kcal",
+		"sugar": "51g (51%)",
+		"protein": "9g (16%)",
+		"saturated": "14.2g (95%)",
+		"sodium": "202mg (10%)",
+		"caffeine": "3mg"
+	  }
+	},
+	{
+	  "name_KR": "콜드브루 모카 할리치노",
+	  "name_EN": "Cold Brew Mocha Hollyccino",
+	  "text": "콜드브루와 모카가 만나 풍미 가득한 커피 할리치노",
+	  "info": {
+		"title": "제품영양정보 ((1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "323kcal",
+		"sugar": "37g (37%)",
+		"protein": "6g (11%)",
+		"saturated": "10.2g (68%)",
+		"sodium": "176mg (9%)",
+		"caffeine": "137mg"
+	  }
+	},
+	{
+	  "name_KR": "제주 말차 할리치노",
+	  "name_EN": "Jeju Matcha Hollyccino",
+	  "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 할리치노",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "426kcal",
+		"sugar": "61g (61%)",
+		"protein": "8g (14%)",
+		"saturated": "8.1g (54%)",
+		"sodium": "112mg (6%)",
+		"caffeine": "194mg"
+	  }
+	},
+	{
+	  "name_KR": "민트 초코칩 할리치노",
+	  "name_EN": "Mint Chocochip Hollyccino",
+	  "text": "초코칩이 콕콕 박힌 상쾌하면서 청량한 민트 맛의 블렌디드 음료",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "438kcal",
+		"sugar": "57g (57%)",
+		"protein": "7g (12%)",
+		"saturated": "12.8g (85%)",
+		"sodium": "227mg (11%)",
+		"caffeine": "3mg"
+	  }
+	},
+	{
+	  "name_KR": "딸기 치즈케익 할리치노",
+	  "name_EN": "Strawberry Cheese Cake Hollyccino",
+	  "text": "치즈케익맛 아이스블렌디드 음료에 상큼한 딸기를 토핑한 할리스 시그니처 메뉴",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "415kcal",
+		"sugar": "59g (59%)",
+		"protein": "5g (10%)",
+		"saturated": "10.2g (68%)",
+		"sodium": "166mg (8%)",
+		"caffeine": "-"
+	  }
+	},
+	{
+	  "name_KR": "플레인 요거트 할리치노",
+	  "name_EN": "Plain Yogurt Hollyccino",
+	  "text": "저지방우유에 유산균이 살아있는 요거트를 더한 슬러쉬",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "292kcal",
+		"sugar": "58g (58%)",
+		"protein": "7g (13%)",
+		"saturated": "0.9g (6%)",
+		"sodium": "202mg (10%)",
+		"caffeine": "0mg"
+	  }
+	},
+	{
+	  "name_KR": "콜드브루 할리치노",
+	  "name_EN": "Coldbrew Hollyccino",
+	  "text": "콜드브루와 우유, 얼음이 갈린 할리치노",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "264kcal",
+		"sugar": "35g (35%)",
+		"protein": "5g (9%)",
+		"saturated": "7.5g (50%)",
+		"sodium": "182mg (9%)",
+		"caffeine": "91mg"
+	  }
+	}
+]

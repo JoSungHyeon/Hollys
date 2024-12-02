@@ -1,0 +1,254 @@
+[
+	{
+	  "name_KR": "솔티카라멜크림 라떼",
+	  "name_EN": "Salted Caramel Cream Latte",
+	  "text": "진리의 단짠조합. 솔티카라멜크림을 듬뿍 올려 더욱 진한 풍미의 딥 라떼",
+	  "info": {
+		"title": "제품영양정보 ((1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "287kcal",
+		"sugar": "33g (33%)",
+		"protein": "8g (15%)",
+		"saturated": "9.4g (63%)",
+		"sodium": "236mg (12%)",
+		"caffeine": "82mg"
+	  }
+	},
+	{
+	  "name_KR": "블랙아리아 아메리카노",
+	  "name_EN": "Black Aria Americano",
+	  "text": "스페셜티 블렌드를 사용하여 과일과 베리향의 고급스러운 커피 풍미가 특징인 아메리카노",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml, Venti/591ml))",
+		"calorie": "9kcal",
+		"sugar": "0g (0%)",
+		"protein": "0g (0%)",
+		"saturated": "0.1g (0%)",
+		"sodium": "0mg (0%)",
+		"caffeine": "153mg"
+	  }
+	},
+	{
+	  "name_KR": "블랙아리아 딥라떼",
+	  "name_EN": "Black Aria Deep Latte",
+	  "text": "스페셜티 블렌드를 사용하여 과일과 베리향의 고급스러운 커피 풍미가 특징인 부드러운 라떼",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml, Venti/591ml))",
+		"calorie": "165kcal",
+		"sugar": "12g (12%)",
+		"protein": "8g (15%)",
+		"saturated": "6g (40%)",
+		"sodium": "130mg (7%)",
+		"caffeine": "153mg"
+	  }
+	},
+	{
+	  "name_KR": "돌체 라떼",
+	  "name_EN": "Dolce Latte",
+	  "text": "달콤한 연유와 고소한 원두, 크리미한 바디가 어우러진 스페셜 메뉴",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular 기준)",
+		"calorie": "289kcal",
+		"sugar": "31g (31%)",
+		"protein": "11g (20%)",
+		"saturated": "7.6g (51%)",
+		"sodium": "180mg (9%)",
+		"caffeine": "93mg"
+	  }
+	},
+	{
+	  "name_KR": "디카페인 아메리카노",
+	  "name_EN": "Americano (Decaf blend)",
+	  "text": "할리스만의 노하우로 블렌딩한 디카페인 원액을 더해, 깔끔한 후미와 은은한 단맛을 느낄 수 있는 디카페인 아메리카노",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular 기준)",
+		"calorie": "12kcal",
+		"sugar": "0g (0%)",
+		"protein": "1g (1%)",
+		"saturated": "0g (0%)",
+		"sodium": "6mg (0%)",
+		"caffeine": "3mg"
+	  }
+	},
+	{
+	  "name_KR": "디카페인 카페 라떼",
+	  "name_EN": "Caffe Latte (Decaf blend)",
+	  "text": "할리스만의 노하우로 블렌딩한 디카페인 원액을 더해, 부드러운 풍미와 규형 잡힌 바디감의 디카페인 카페 라떼",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular 기준)",
+		"calorie": "175kcal",
+		"sugar": "12g (12%)",
+		"protein": "9g (16%)",
+		"saturated": "6.3g (42%)",
+		"sodium": "142mg (7%)",
+		"caffeine": "3mg"
+	  }
+	},
+	{
+	  "name_KR": "디카페인 바닐라 딜라이트",
+	  "name_EN": "Vanilla Delight (Decaf blend)",
+	  "text": "할리스만의 노하우로 블렌딩한 디카페인 원액을 더해, 더욱 부드럽고 달콤한 디카페인 바닐라 딜라이트",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular 기준)",
+		"calorie": "247kcal",
+		"sugar": "31g (31%)",
+		"protein": "10g (18%)",
+		"saturated": "5.6g (38%)",
+		"sodium": "218mg (11%)",
+		"caffeine": "25mg"
+	  }
+	},
+	{
+	  "name_KR": "콜드브루 딜라이트",
+	  "name_EN": "Cold Brew Delight",
+	  "text": "실키한 연유베이스에 콜드브루를 넣어 부담없이 즐기는 라떼",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준(Grande/472ml))",
+		"calorie": "198kcal",
+		"sugar": "23g (23%)",
+		"protein": "7g (13%)",
+		"saturated": "4.8g (32%)",
+		"sodium": "106mg (5%)",
+		"caffeine": "195mg"
+	  }
+	},
+	{
+	  "name_KR": "콜드브루 라떼",
+	  "name_EN": "Cold Brew Latte",
+	  "text": "콜드브루 커피의 풍부한 풍미와 우유의 고소함이 더해진 라떼",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml, Venti/591ml))",
+		"calorie": "114kcal",
+		"sugar": "8g (8%)",
+		"protein": "6g (11%)",
+		"saturated": "3.9g (26%)",
+		"sodium": "88mg (4%)",
+		"caffeine": "195mg"
+	  }
+	},
+	{
+	  "name_KR": "콜드브루",
+	  "name_EN": "Cold Brew",
+	  "text": "콜드브루 전용 블렌드를 상온의 물로 오랜시간 추출해 달콤한 산미와 부드러운 바디감이 살아있는 커피",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml, Venti/591ml))",
+		"calorie": "12kcal",
+		"sugar": "0g (0%)",
+		"protein": "1g (1%)",
+		"saturated": "0g (0%)",
+		"sodium": "3mg (0%)",
+		"caffeine": "195mg"
+	  }
+	},
+	{
+	  "name_KR": "바닐라 딜라이트",
+	  "name_EN": "Vanilla Delight",
+	  "text": "카페라떼에 바닐라빈으로 만든 바닐라 파우더를 더해 더욱 풍부하고 감미로운 할리스만의 바닐라라떼",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml, Venti/591ml))",
+		"calorie": "245kcal",
+		"sugar": "31g (31%)",
+		"protein": "10g (17%)",
+		"saturated": "5.6g (38%)",
+		"sodium": "213mg (11%)",
+		"caffeine": "83mg"
+	  }
+	},
+	{
+	  "name_KR": "카라멜 마키아또",
+	  "name_EN": "Caramel Macchiato",
+	  "text": "진한 에스프레소에 바닐라 시럽과 카라멜소스가 더해진 카라멜 커피음료의 대표",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "227kcal",
+		"sugar": "23g (23%)",
+		"protein": "8g (15%)",
+		"saturated": "6.1g (41%)",
+		"sodium": "135mg (7%)",
+		"caffeine": "127mg"
+	  }
+	},
+	{
+	  "name_KR": "카페모카",
+	  "name_EN": "Caffe Mocha",
+	  "text": "진한 에스프레소와 우유, 달콤 쌉싸름한 초콜릿이 어우러진 커피",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "301kcal",
+		"sugar": "30g (30%)",
+		"protein": "9g (16%)",
+		"saturated": "10.2g (68%)",
+		"sodium": "166mg (8%)",
+		"caffeine": "132mg"
+	  }
+	},
+	{
+	  "name_KR": "카푸치노",
+	  "name_EN": "Cappuccino",
+	  "text": "에스프레소에 실키하고 폭신폭신한 우유 거품이 풍부하게 더해진 커피",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml))",
+		"calorie": "149kcal",
+		"sugar": "10g (10%)",
+		"protein": "8g (14%)",
+		"saturated": "5.3g (36%)",
+		"sodium": "115mg (6%)",
+		"caffeine": "127mg"
+	  }
+	},
+	{
+	  "name_KR": "카페 라떼",
+	  "name_EN": "Caffe Latte",
+	  "text": "진한 에스프레소에 우유를 넣어 풍부한 커피향을 부드럽게 즐길 수 있는 커피",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml, Venti/591ml))",
+		"calorie": "167kcal",
+		"sugar": "12g (12%)",
+		"protein": "8g (15%)",
+		"saturated": "6.0g (40%)",
+		"sodium": "130mg (7%)",
+		"caffeine": "127mg"
+	  }
+	},
+	{
+	  "name_KR": "아메리카노",
+	  "name_EN": "Caffe Americano",
+	  "text": "진한 에스프레소의 맛과 향을 부드럽게 즐길 수 있는 아메리칸 스타일의 커피",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Regular / 354ml 기준 (Grande/472ml, Venti/591ml))",
+		"calorie": "12kcal",
+		"sugar": "0g (0%)",
+		"protein": "1g (2%)",
+		"saturated": "0.1g (0%)",
+		"sodium": "5mg (0%)",
+		"caffeine": "114mg"
+	  }
+	},
+	{
+	  "name_KR": "아포가토",
+	  "name_EN": "Affogato",
+	  "text": "바닐라 아이스크림과 리스트레또 더블샷이 어우러져 부드럽고 진한 맛의 아포가토",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / 150ml 기준)",
+		"calorie": "207kcal",
+		"sugar": "15g (15%)",
+		"protein": "4g (8%)",
+		"saturated": "7.4g (49%)",
+		"sodium": "36mg (2%)",
+		"caffeine": "93mg"
+	  }
+	},
+	{
+	  "name_KR": "에스프레소",
+	  "name_EN": "Espresso",
+	  "text": "강렬한 첫 맛, 풍부한 바디감, 깔끔한 뒷 맛이 특징인 커피의 심장",
+	  "info": {
+		"title": "제품영양정보 (1회 제공량 / Solo / 25ml 기준 (Dopio/50ml))",
+		"calorie": "5kcal",
+		"sugar": "0g (0%)",
+		"protein": "0g (1%)",
+		"saturated": "0g (0%)",
+		"sodium": "0mg (0%)",
+		"caffeine": "61mg"
+	  }
+	}
+]
