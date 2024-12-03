@@ -1,0 +1,133 @@
+section {
+	padding: 80px 0 100px 0;
+}
+
+.section_inner {
+	max-width: 950px;
+	margin: 0 auto;
+	display: flex;
+	gap: 50px;
+}
+
+.section_inner .left_article {
+	width: 200px;
+}
+
+.section_inner .left_article ul a {
+	font-size: 1.25em;
+	font-weight: 600;
+	color: #111;
+	padding-bottom: 10px;
+}
+
+.section_inner .left_article ul a.on {
+	color: #BA000C;
+}
+
+.section_inner .right_article {
+	width: calc(100% - 250px);
+} 
+
+.section_inner .right_article .title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.section_inner .right_article .title h3 {
+	font-size: 3em;
+}
+
+.section_inner .right_article .title .menu_wrap {
+	display: flex;
+	gap: 20px;
+}
+
+.section_inner .right_article .title .menu_wrap .menu_img img {
+	width: 100%;
+}
+
+.section_inner .right_article .title .menu_wrap .menu_desc strong {
+	display: block;
+	font-size: 1.75em;
+}
+
+.section_inner .right_article .title .menu_wrap .menu_desc i {
+	font-style: normal;
+	display: block;
+	font-size: 1.125em;
+}
+
+.section_inner .right_article .title .menu_wrap .menu_desc p {
+	padding-top: 20px;
+	font-size: 1em;
+	word-break: keep-all;
+}
+
+.item_info {
+	padding-top: 30px;
+}
+
+.item_info > p {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.item_info table {
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.item_info table thead th {
+	padding: 12px;
+	border-left: 1px solid #ccc;
+	font-size: 0.825em;
+}
+
+.item_info table tbody td {
+	padding: 16px 12px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	font-size: 0.75em;
+}
+
+.item_info table .first-col {
+	border-left: none;
+}
+
+.other_item {
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+.other_item ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.other_item ul li {
+	width: calc(100% / 7);
+}
+
+.other_item ul li a {
+	display: block;
+}
+
+
+.other_item ul li a img {
+	width: 100%;
+}
+
+.other_item ul li a p {
+	font-size: 0.75em;
+	text-align: center;
+	word-break: keep-all;
+}
+
+.active_btn {
+	padding-top: 30px;
+	width: 100%;
+}

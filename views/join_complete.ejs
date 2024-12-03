@@ -8,15 +8,37 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/common.css">
-	<link rel="stylesheet" href="./css/index.css">
-	<title>Hollys Coffee</title>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script src="./js/index.js"></script>
+	<link rel="stylesheet" href="./css/join.css">
+	<title>Join</title>
 </head>
-<!-- #BA000C -->
 <body>
-	<div>홈임</div>
+	<%- include('header.ejs') %>
+
+	<section>
+		<div class="section_inner">
+			<div class="left_article">
+				<h2>회원가입</h2>
+			</div>
+			<div class="right_article">
+				<div class="title">
+					<h3>멤버십 가입</h3>
+					<div class="title_img">
+						<img src="./img/join.gif" alt="join">
+					</div>
+					<div class="title_desc">
+						<p>가입이 완료되었습니다!</p>
+					</div>
+				</div>
+				<a href="/" class="home_btn">홈 바로가기</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer_inner">
+			<p>본 페이지는 개인 포트폴리오용 페이지이므로 상업적 용도가 없습니다.</p>
+		</div>
+	</footer>
 </body>
 </html>
