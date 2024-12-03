@@ -150,4 +150,8 @@ app.post('/join', checkLogin, async (req, res) => {
 
 app.get('/mypage', (req, res) => {
 	res.render('mypage.ejs', {result: req.user})
-  })
+})
+
+app.get('/qna', (req, res) => {
+	res.render('qna.ejs')
+})

@@ -49,31 +49,39 @@
 		<div class="section_inner">
 			<!-- login.ejs -->
 			<div class="order_wrap">
-				<a href="/espresso" class="order">주문하기</a>
-				<a href="/login" class="login">로그인</a>
+				<a href="/espresso" class="order"></a>
+				<% if(login) { %>
+					<a href="/login" class="membership">멤버십 혜택</a>
+				<% } else { %>
+					<a href="/login" class="join"></a>
+				<% } %>
 			</div>
 			<!-- login_info.js -->
 			<!-- notice.ejs -->
 			<div class="note_wrap">
-				<p>문의사항</p>
-				<ul>
-					<li>
-						<a href="">리스트 제목</a>
-						<span>2024-11-21</span>
-					</li>
-					<li>
-						<a href="">리스트 제목</a>
-						<span>2024-11-21</span>
-					</li>
-					<li>
-						<a href="">리스트 제목</a>
-						<span>2024-11-21</span>
-					</li>
-					<li>
-						<a href="">리스트 제목</a>
-						<span>2024-11-21</span>
-					</li>
-				</ul>
+				<p>고객 Q&A</p>
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="/qna">첫 번째 게시글</a></td>
+							<td>2024-12-03</td>
+						</tr>
+						<tr>
+							<td><a href="/qna">두 번째 게시글</a></td>
+							<td>2024-12-02</td>
+						</tr>
+						<tr>
+							<td><a href="/qna">세 번째 게시글</a></td>
+							<td>2024-12-01</td>
+						</tr>
+						<tr>
+							<td><a href="/qna">세 번째 게시글</a></td>
+							<td>2024-12-01</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<!-- 상세 리스트.ejs -->
 		</div>
