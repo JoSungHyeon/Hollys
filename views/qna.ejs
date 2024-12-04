@@ -13,7 +13,11 @@
 	<title>Join</title>
 </head>
 <body>
-	<%- include('header.ejs') %>
+	<% if(login) { %>
+		<%- include('login_header.ejs') %>
+	<% } else { %>
+		<%- include('header.ejs') %>
+	<% } %>
 
 	<section>
 		<div class="section_inner">
@@ -31,52 +35,30 @@
 					</div>
 				</div>
 				<div class="note_wrap">
-					<p>고객 Q & A</p>
 					<table>
 						<thead>
 							<tr>
-								<th>순번</th>
 								<th>제목</th>
-								<th>날짜</th>
+								<th>등록일</th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>1</td>
-								<td><a href="/qna">첫 번째 게시글</a></td>
-								<td>2024-12-03</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td><a href="/qna">두 번째 게시글</a></td>
-								<td>2024-12-02</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td><a href="/qna">세 번째 게시글</a></td>
-								<td>2024-12-01</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td><a href="/qna">세 번째 게시글</a></td>
-								<td>2024-12-01</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td><a href="/qna">세 번째 게시글</a></td>
-								<td>2024-12-01</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td><a href="/qna">세 번째 게시글</a></td>
-								<td>2024-12-01</td>
-							</tr>
+							<% for(let i=0; i<data.length; i++) { %>
+								<tr>
+									<td><a href="/qna"><%= data[i].title %></a></td>
+									<td>2024-12-03</td>
+								</tr>
+							<% } %>
 						</tbody>
+						<% if(login) { %>
+							<a href="/write" class="write">글작성</a>
+						<% } %>
 					</table>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 	<footer>
 		<div class="footer_inner">

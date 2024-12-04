@@ -24,8 +24,8 @@
 	<section>
 		<div class="section_inner">
 			<div class="left_article">
-				<ul><li><a href="/espresso" class="on">COFFEE</a></li></ul>
-				<ul><li><a href="/signature">라떼 · 초콜릿 · 티</a></li></ul>
+				<ul><li><a href="/signature">COFFEE</a></li></ul>
+				<ul><li><a href="/sigature" class="on">라떼 · 초콜릿 · 티</a></li></ul>
 				<ul><li><a href="/hollyccino">할리치노 · 빙수</a></li></ul>
 			</div>
 			<div class="right_article">
@@ -33,7 +33,7 @@
 					<h3>COFFEE</h3>
 					<div class="menu_wrap">
 						<div class="menu_img">
-							<img src="./img/espresso/espresso_1.png" alt="espresso_1">
+							<img src="./img/signature/signature_1.png" alt="signature_1">
 						</div>
 						<div class="menu_desc">
 							<strong><%= data[0].name_KR %></strong>
@@ -71,7 +71,7 @@
 						<% for(let i=0; i<data.length; i++) { %>
 							<li  data-index="<%= i %>">
 								<a href="">
-									<img src="./img/espresso/espresso_<%= i+1 %>.png" alt="espresso_<%= i+1 %>">
+									<img src="./img/signature/signature_<%= i+1 %>.png" alt="signature_<%= i+1 %>">
 									<p><%= data[i].name_KR %></p>
 								</a>
 							</li>
@@ -94,8 +94,8 @@
 
 							itemNum = parseInt(itemNum);
 							
-							menuImg.src = `./img/espresso/espresso_${itemNum + 1}.png`;
-							menuImg.alt = `espresso_${itemNum + 1}`;
+							menuImg.src = `./img/signature/signature_${itemNum + 1}.png`;
+							menuImg.alt = `signature_${itemNum + 1}`;
 			
 							menuTitleKR.innerText = data[itemNum].name_KR;
 							menuTitleEN.innerText = data[itemNum].name_EN;

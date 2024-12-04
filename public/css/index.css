@@ -43,60 +43,9 @@ main .swiper-pagination-bullet-active {
 .note_wrap {
 	padding-top: 100px;
 	width: 100%;
-}
-
-.note_wrap > p {
-	font-size: 22px;
-	font-weight: 600;
-}
-
-.note_wrap table {
-	width: 100%;
-	border-collapse: collapse;
-	margin: 20px 0;
-}
-
-.note_wrap thead {
-	background-color: #BA000C;
-	color: white;
-}
-
-.note_wrap th {
-	padding: 6px 10px;
-	text-align: left;
-}
-
-.note_wrap tbody td {
-	padding: 6px 10px;
-	text-align: center;
-	border: 1px solid #ddd;
-}
-
-.note_wrap tbody td a {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-.note_wrap tbody tr:nth-child(even) {
-	background-color: #f2f2f2;
-}
-
-.note_wrap tbody tr td:nth-child(1) {
-	width: 80%;
-	text-align: left;
-}
-
-.note_wrap tbody tr:hover {
-	background-color: #ddd;
-}
-
-.note_wrap td {
-	text-align: left;
-}
-
-.note_wrap table, th, td {
-	border: 1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
 }
 
 /* live */ 

@@ -25,7 +25,7 @@ app.use(session({
     cookie: { maxAge: 60 * 60 * 1000 },
     store: MongoStore.create({ // 이거 추가해야함 아니면 걍 메모리일뿐
       mongoUrl: process.env.DB_URL,
-      dbName: 'myProject1'
+      dbName: 'hollys'
     })
 }));
 
@@ -36,7 +36,7 @@ let db
 const url = process.env.DB_URL;
 new MongoClient(url).connect().then((client)=>{
   console.log('DB연결성공')
-  db = client.db('myProject1');
+  db = client.db('hollys');
   app.listen(process.env.PORT, () => {
     console.log("http://localhost:5000 에서 서버 실행중");
   });
@@ -59,10 +59,6 @@ app.get('/', (req, res) => {
 	res.render('index.ejs', {login: isLogged});
 });
 
-
-app.get('/espresso', (req, res) => {
-	res.render('espresso.ejs');
-});
 
 // login
 passport.use(new LocalStrategy(async (입력한아이디, 입력한비번, cb) => { // 로그인될때 유저정보가 데이터베이스에 있는지
@@ -152,6 +148,26 @@ app.get('/mypage', (req, res) => {
 	res.render('mypage.ejs', {result: req.user})
 })
 
-app.get('/qna', (req, res) => {
-	res.render('qna.ejs')
+app.get('/qna', async (req, res) => {
+	const isLogged = req.session.user ? true : false;
+	let result = await db.collection('list').find({}).toArray();
+	res.render('qna.ejs', {data: result, login: isLogged})
 })
+
+app.get('/espresso', async(req, res) => {
+	const isLogged = req.session.user ? true : false;
+	let result = await db.collection('espresso').find({}).toArray();
+	res.render('espresso.ejs', {data: result, login: isLogged});
+});
+
+app.get('/signature', async(req, res) => {
+	const isLogged = req.session.user ? true : false;
+	let result = await db.collection('signature').find({}).toArray();
+	res.render('signature.ejs', {data: result, login: isLogged});
+});
+
+app.get('/hollyccino', async(req, res) => {
+	const isLogged = req.session.user ? true : false;
+	let result = await db.collection('hollyccino').find({}).toArray();
+	res.render('hollyccino.ejs', {data: result, login: isLogged});
+});
