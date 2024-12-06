@@ -52,6 +52,10 @@ section {
 	font-size: 1.75em;
 }
 
+.section_inner .right_article .title .menu_wrap .menu_desc {
+	position: relative;
+}
+
 .section_inner .right_article .title .menu_wrap .menu_desc i {
 	font-style: normal;
 	display: block;
@@ -62,6 +66,17 @@ section {
 	padding-top: 20px;
 	font-size: 1em;
 	word-break: keep-all;
+}
+
+.section_inner .right_article .title .menu_wrap .menu_desc .add {
+	border: none;
+	background-color: #BA000C;
+	line-height: 50px;
+	position: absolute;
+	bottom: 25px;
+	padding: 0 25px;
+	color: #fff;
+	cursor: pointer;
 }
 
 .item_info {

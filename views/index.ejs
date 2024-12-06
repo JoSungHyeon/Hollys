@@ -15,6 +15,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./js/index.js"></script>
 </head>
+<script>
+	function alertText(text, e) {
+		e.preventDefault();
+		alert(text);
+		return;
+	}
+</script>
 <!-- #BA000C -->
 <body>
 	<% if(login) { %>
@@ -51,7 +58,7 @@
 			<div class="order_wrap">
 				<a href="/espresso" class="order"></a>
 				<% if(login) { %>
-					<a href="/login" class="membership">멤버십 혜택</a>
+					<a href="" onclick="alertText('준비중입니다.', event)" class="membership">멤버십 혜택</a>
 				<% } else { %>
 					<a href="/join" class="join"></a>
 				<% } %>
@@ -65,7 +72,7 @@
 					</a>
 				</div>
 				<div class="note_item">
-					<a href="">
+					<a href="" onclick="alertText('준비중입니다.', event)">
 						<img src="./img/fran.png" alt="가맹문의">
 					</a>
 				</div>
@@ -77,8 +84,8 @@
 	<div class="live_wrap">
 		<div class="live_img"><img src="./img/live.gif" alt="liveLogo"></div>
 		<ul class="sns_wrap">
-			<li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-			<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+			<li><a href="" onclick="alertText('준비중입니다.', event)"><i class="fa-brands fa-facebook"></i></a></li>
+			<li><a href="" onclick="alertText('준비중입니다.', event)"><i class="fa-brands fa-instagram"></i></a></li>
 		</ul>
 	</div>
 

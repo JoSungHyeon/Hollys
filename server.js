@@ -130,7 +130,8 @@ app.post('/join', checkLogin, async (req, res) => {
 			username: req.body.username,
 			password: hash,
 			email: req.body.email,
-			number: req.body.number
+			number: req.body.number,
+			cart: []
 		  })
 		  res.render('join_complete.ejs');
 		} else {
@@ -152,7 +153,35 @@ app.get('/qna', async (req, res) => {
 	const isLogged = req.session.user ? true : false;
 	let result = await db.collection('list').find({}).toArray();
 	res.render('qna.ejs', {data: result, login: isLogged})
-})
+});
+
+app.get('/write', async (req, res) => {
+	const isLogged = req.session.user ? true : false;
+	res.render('write.ejs', {login: isLogged, userData: req.user})
+});
+
+app.post('/write', async (req, res) => {
+	const today = new Date();
+	const year = today.getFullYear();
+	const month = today.getMonth() + 1;
+	const day = today.getDate();
+	const formattedDay = day < 10 ? `0${day}` : day;
+	await db.collection('list').insertOne({title: req.body.title, desc: req.body.desc, time: `${year}-${month}-${formattedDay}`});
+	res.redirect('/qna');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.get('/espresso', async(req, res) => {
 	const isLogged = req.session.user ? true : false;
