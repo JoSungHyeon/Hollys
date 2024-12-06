@@ -35,11 +35,13 @@
 						<div class="menu_img">
 							<img src="./img/hollyccino/hollyccino_1.png" alt="hollyccino_1">
 						</div>
-						<div class="menu_desc">
+						<form action="/add" method="post" class="menu_desc">
+							<input type="hidden" name="itemNum" value="<%= data[0]._id %>">
 							<strong><%= data[0].name_KR %></strong>
 							<i><%= data[0].name_EN %></i>
 							<p><%= data[0].text %></p>
-						</div>
+							<button class="add">Add Cart</button>
+						</form>
 					</div>
 				</div>
 				<div class="item_info">
@@ -87,6 +89,7 @@
 						const menuDesc = document.querySelector('.menu_desc p');
 						const itemInfoTitle = document.querySelector('.item_info p');
 						const tableCells = document.querySelectorAll('.item_info table tbody td');
+						const itemInput = document.querySelector('.menu_desc input');
 
 						const data = <%- JSON.stringify(data) %>;
 			
@@ -96,7 +99,8 @@
 							
 							menuImg.src = `./img/hollyccino/hollyccino_${itemNum + 1}.png`;
 							menuImg.alt = `hollyccino_${itemNum + 1}`;
-			
+
+							itemInput.setAttribute('value', data[itemNum]._id);
 							menuTitleKR.innerText = data[itemNum].name_KR;
 							menuTitleEN.innerText = data[itemNum].name_EN;
 							menuDesc.innerText = data[itemNum].text;

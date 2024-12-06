@@ -24,8 +24,8 @@
 	<section>
 		<div class="section_inner">
 			<div class="left_article">
-				<ul><li><a href="/signature">COFFEE</a></li></ul>
-				<ul><li><a href="/sigature" class="on">라떼 · 초콜릿 · 티</a></li></ul>
+				<ul><li><a href="/espresso">COFFEE</a></li></ul>
+				<ul><li><a href="/signature" class="on">라떼 · 초콜릿 · 티</a></li></ul>
 				<ul><li><a href="/hollyccino">할리치노 · 빙수</a></li></ul>
 			</div>
 			<div class="right_article">
@@ -35,11 +35,13 @@
 						<div class="menu_img">
 							<img src="./img/signature/signature_1.png" alt="signature_1">
 						</div>
-						<div class="menu_desc">
+						<form action="/add" method="post" class="menu_desc">
+							<input type="hidden" name="itemNum" value="<%= data[0]._id %>">
 							<strong><%= data[0].name_KR %></strong>
 							<i><%= data[0].name_EN %></i>
 							<p><%= data[0].text %></p>
-						</div>
+							<button class="add">Add Cart</button>
+						</form>
 					</div>
 				</div>
 				<div class="item_info">
@@ -87,6 +89,7 @@
 						const menuDesc = document.querySelector('.menu_desc p');
 						const itemInfoTitle = document.querySelector('.item_info p');
 						const tableCells = document.querySelectorAll('.item_info table tbody td');
+						const itemInput = document.querySelector('.menu_desc input');
 
 						const data = <%- JSON.stringify(data) %>;
 			
@@ -97,6 +100,7 @@
 							menuImg.src = `./img/signature/signature_${itemNum + 1}.png`;
 							menuImg.alt = `signature_${itemNum + 1}`;
 			
+							itemInput.setAttribute('value', data[itemNum]._id);
 							menuTitleKR.innerText = data[itemNum].name_KR;
 							menuTitleEN.innerText = data[itemNum].name_EN;
 							menuDesc.innerText = data[itemNum].text;
