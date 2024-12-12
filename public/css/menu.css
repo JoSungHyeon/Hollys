@@ -141,3 +141,8 @@ section {
 	text-align: center;
 	word-break: keep-all;
 }
+
+.other_item .more {
+	display: block;
+	margin-top: 20px;
+}

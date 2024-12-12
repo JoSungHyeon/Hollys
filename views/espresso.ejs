@@ -69,9 +69,9 @@
 				</div>
 
 				<div class="other_item">
-					<ul>
+					<ul class="other_list">
 						<% for(let i=0; i<data.length; i++) { %>
-							<li  data-index="<%= i %>">
+							<li data-index="<%= i %>">
 								<a href="">
 									<img src="./img/espresso/espresso_<%= i+1 %>.png" alt="espresso_<%= i+1 %>">
 									<p><%= data[i].name_KR %></p>
@@ -79,9 +79,46 @@
 							</li>
 						<% } %>
 					</ul>
+					<a href="" class="more">
+						<img src="./img/more.gif" alt="more">
+					</a>
 				</div>
 				<script>
 					window.addEventListener("load", function() {
+						const data = <%- JSON.stringify(data) %>;
+						let otherDOM = document.querySelector(".other_list");
+						let otherItem = document.querySelectorAll(".other_list li");
+						let count=0;
+						let moreCount=0;
+						let otherString="";
+						let showItem = 7;
+
+						function moreAppend(){
+							if(count*showItem > data.length) return;
+						
+							count++;
+						
+							data.forEach((item, i) => {
+								if(i >= count*showItem){
+									otherItem[i].style.display = "none";
+								} else {
+									otherItem[i].style.display = "block";
+								}
+							});
+						
+							if(count*showItem >= data.length){
+								document.querySelector(".more").style.display="none";
+							}
+						}
+					
+						moreAppend();
+					
+						document.querySelector(".more").addEventListener("click", function(e){
+							e.preventDefault();
+						
+							moreAppend();
+						});
+
 						const items = document.querySelectorAll('.other_item ul li');
 						const menuImg = document.querySelector('.menu_img img');
 						const menuTitleKR = document.querySelector('.menu_desc strong');
@@ -91,8 +128,6 @@
 						const tableCells = document.querySelectorAll('.item_info table tbody td');
 						const itemInput = document.querySelector('.menu_desc input');
 
-						const data = <%- JSON.stringify(data) %>;
-			
 						function updateItem(itemNum) {
 
 							itemNum = parseInt(itemNum);
@@ -118,6 +153,7 @@
 							item.addEventListener('click', function(e) {
 								e.preventDefault();
 								const itemNum = item.getAttribute('data-index');
+								
 								updateItem(itemNum);
 							});
 						});

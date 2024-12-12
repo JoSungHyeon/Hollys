@@ -171,18 +171,6 @@ app.post('/write', async (req, res) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 app.get('/espresso', async(req, res) => {
 	const isLogged = req.session.user ? true : false;
 	let result = await db.collection('espresso').find({}).toArray();
