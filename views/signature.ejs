@@ -9,8 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="./css/common.css">
-	<link rel="stylesheet" href="./css/menu.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/menu.css">
 	<title>Menu</title>
 </head>
 
@@ -33,7 +33,7 @@
 					<h3>COFFEE</h3>
 					<div class="menu_wrap">
 						<div class="menu_img">
-							<img src="./img/signature/signature_1.png" alt="signature_1">
+							<img src="/img/signature/signature_1.png" alt="signature_1">
 						</div>
 						<form action="/add" method="post" class="menu_desc">
 							<input type="hidden" name="itemNum" value="<%= data[0]._id %>">
@@ -75,7 +75,7 @@
 						<% for(let i=0; i<data.length; i++) { %>
 							<li  data-index="<%= i %>">
 								<a href="">
-									<img src="./img/signature/signature_<%= i+1 %>.png" alt="signature_<%= i+1 %>">
+									<img src="/img/signature/signature_<%= i+1 %>.png" alt="signature_<%= i+1 %>">
 									<p><%= data[i].name_KR %></p>
 								</a>
 							</li>
@@ -99,7 +99,7 @@
 
 							itemNum = parseInt(itemNum);
 							
-							menuImg.src = `./img/signature/signature_${itemNum + 1}.png`;
+							menuImg.src = `/img/signature/signature_${itemNum + 1}.png`;
 							menuImg.alt = `signature_${itemNum + 1}`;
 			
 							itemInput.setAttribute('value', data[itemNum]._id);
