@@ -40,7 +40,9 @@
 							<strong><%= data[0].name_KR %></strong>
 							<i><%= data[0].name_EN %></i>
 							<p><%= data[0].text %></p>
-							<button class="add">Add Cart</button>
+							<% if(login) { %>
+								<button class="add">+ Wish List</button>
+							<% } %>
 						</form>
 					</div>
 				</div>

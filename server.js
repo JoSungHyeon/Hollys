@@ -19,7 +19,7 @@ const LocalStrategy = require('passport-local');
 const MongoStore = require('connect-mongo'); // 로그인된 세션 몽고디비에 저장하기
 app.use(passport.initialize())
 app.use(session({
-    secret: process.env.SECRET_PASSWORD,
+    secret: '암호화에 쓸 비밀번호',
     resave : false,
     saveUninitialized : false,
     cookie: { maxAge: 60 * 60 * 1000 },
@@ -38,7 +38,7 @@ new MongoClient(url).connect().then((client)=>{
   console.log('DB연결성공')
   db = client.db('hollys');
   app.listen(process.env.PORT, () => {
-    console.log("http://localhost:5000 에서 서버 실행중");
+    console.log("http://localhost:8080 에서 서버 실행중");
   });
 }).catch((err)=>{
   console.log(err)
@@ -146,13 +146,29 @@ app.post('/join', checkLogin, async (req, res) => {
 });
 
 app.get('/mypage', (req, res) => {
-	res.render('mypage.ejs', {result: req.user})
+	const isLogged = req.session.user ? true : false;
+	res.render('mypage.ejs', {result: req.user, login: isLogged})
 })
 
 app.get('/qna', async (req, res) => {
 	const isLogged = req.session.user ? true : false;
 	let result = await db.collection('list').find({}).toArray();
 	res.render('qna.ejs', {data: result, login: isLogged})
+});
+
+app.get('/detail/:id', async (req, res) => {
+	try {
+	  const isLogged = req.session.user ? true : false;
+	  let result = await db.collection('list').findOne({ _id: new ObjectId(req.params.id)});
+	  if(result == null) {
+		res.status(404).send("존재하지 않는 아이템입니다.")  
+	  } else {
+		res.render('detail.ejs', {result: result, login: isLogged});
+	  }
+	} catch(e) {
+	  res.status(404).send("존재하지 않는 아이템입니다.")
+	}
+  
 });
 
 app.get('/write', async (req, res) => {

@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/common.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/mypage.css">
+    <title>My Page</title>
 </head>
 <body>
-    <%- include('login_header.ejs') %>
+	<% if(login) { %>
+		<%- include('login_header.ejs') %>
+	<% } else { %>
+		<%- include('header.ejs') %>
+	<% } %>
 
-    <h2>안녕하세요</h2>
-    <p><%= result.username %> 님 반갑습니다.</p>
+	<section>
+		<div class="section_inner">
+			<div class="left_article">
+				<ul><li><a href="/espresso" class="on">홈</a></li></ul>
+				<ul><li><a href="/signature">비밀번호 변경</a></li></ul>
+				<ul><li><a href="/logout">로그아웃</a></li></ul>
+			</div>
+			<div class="right_article">
+				<div class="title">
+                    <h2>안녕하세요</h2>
+                    <p><%= result.username %> 님 반갑습니다 !</p>
+				</div>
+				<div class="item_info">
+					<p>Wish List</p>
+                    <form action="/deleteData" method="post">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="./img/hollyccino/hollyccino_1.png" alt="hollyccino_1">
+                                        <p>솔티카라멜크림 라떼</p>
+                                    </td>
+                                    <td>
+                                        <p>진리의 단짠조합. 솔티카라멜크림을 듬뿍 올려 더욱 진한 풍미의 딥 라떼</p>
+                                        <button type="submit"><i class="fa-solid fa-x"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <footer>
+		<div class="footer_inner">
+			<p>본 페이지는 개인 포트폴리오용 페이지이므로 상업적 용도가 없습니다.</p>
+		</div>
+	</footer>
 </body>
 </html>

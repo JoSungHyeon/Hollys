@@ -9,8 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="/css/common.css">
-	<link rel="stylesheet" href="/css/qna.css">
-	<title>QnA</title>
+	<link rel="stylesheet" href="/css/detail.css">
+	<title>Join</title>
 </head>
 <body>
 	<% if(login) { %>
@@ -26,37 +26,12 @@
 			</div>
 			<div class="right_article">
 				<div class="title">
-					<h3>고객 Q&A</h3>
-					<!-- <div class="title_img">
-						<img src="./img/join.gif" alt="join">
-					</div> -->
-					<div class="title_desc">
-						<p>공지사항 및 고객님들의 문의사항 입니다.</p>
-					</div>
+					<h3>문의사항</h3>
 				</div>
-				<div class="note_wrap">
-					<table>
-						<thead>
-							<tr>
-								<th>제목</th>
-								<th>등록일</th>
-							</tr>
-						</thead>
-						<tbody>
-							<% for(let i=0; i<data.length; i++) { %>
-								<tr>
-									<td><a href="/detail/<%= data[i]._id %>"><%= data[i].title %></a></td>
-									<td><%= data[i].time %></td>
-								</tr>
-							<% } %>
-						</tbody>
-						<% if(login) { %>
-							<a href="/write" class="write">글작성</a>
-						<% } else { %>
-							<p class="write">글작성은 로그인 후 이용 가능합니다.</p>
-						<% } %>
-					</table>
-				</div>
+				<form action="/write" method="post">
+					<p>제목 : <%= result.title%></p>
+					<p>내용 : <%= result.desc%></p>
+				</form>
 			</div>
 		</div>
 	</section>
